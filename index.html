@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-click-to-move-1">
+        <li class="text">Click to move 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-click-to-move-2">
+        <li class="text">Click to Move 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-click-to-move-3">
+        <li class="text">Click to move 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-click-to-move-5">
+        <li class="text">click to move 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-click-to-move-7">
+        <li class="text">click to move 7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-click-to-move-8">
+        <li class="text">click to move 8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-click-to-move-1">
+        <li class="text">CLICK TO MOVE 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-rr">
+        <li class="text">RR</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-cl">
+        <li class="text">CL</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-cr">
+        <li class="text">CR</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-lecture-room-2">
+        <li class="text">LECTURE ROOM 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-click-to-move-2">
+        <li class="text">CLICK TO MOVE 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-ll">
+        <li class="text">LL</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-ltop">
+        <li class="text">LTOP</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-lecture-room-1">
+        <li class="text">LECTURE ROOM 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-top2">
+        <li class="text">TOP2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-top1">
+        <li class="text">TOP1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-root-top">
+        <li class="text">ROOT TOP</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-main-enterance">
+        <li class="text">MAIN ENTERANCE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-click-to-move-9">
+        <li class="text">click to move 9</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-click-to-move-10">
+        <li class="text">click to move 10</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-click-to-move-12">
+        <li class="text">click to move 12</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-click-to-move-13">
+        <li class="text">click to move 13</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-click-to-move-14">
+        <li class="text">click to move 14</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-click-to-move-15">
+        <li class="text">click to move 15</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-nlt-main-enterance">
+        <li class="text">NLT MAIN ENTERANCE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-nlt-lecture-room">
+        <li class="text">NLT LECTURE ROOM</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-click-to-move-16">
+        <li class="text">CLICK TO MOVE 16</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-nlt-ent">
+        <li class="text">NLT ENT</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-click-to-move-nlt1">
+        <li class="text">CLICK TO MOVE NLT1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-click-to-move-nlt2">
+        <li class="text">CLICK TO MOVE NLT2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-click-to-move-nlt3">
+        <li class="text">CLICK TO MOVE NLT3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-click-to-move-nlt4">
+        <li class="text">CLICK TO MOVE NLT4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-code">
+        <li class="text">CODE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-click-to-move-nlt6">
+        <li class="text">CLICK TO MOVE NLT6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-click-to-move-nlt5">
+        <li class="text">CLICK TO MOVE NLT5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-click-to-move-nlt7">
+        <li class="text">CLICK TO MOVE NLT7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-click-to-move-nlt8">
+        <li class="text">CLICK TO MOVE NLT8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-main-auditorium">
+        <li class="text">MAIN AUDITORIUM</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-1000675040">
+        <li class="text">1000675040</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-click-to-move-cac1">
+        <li class="text">CLICK TO MOVE CAC1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-click-to-move-cac2">
+        <li class="text">CLICK TO MOVE CAC2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-click-to-move-cac-3">
+        <li class="text">CLICK TO MOVE CAC 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-click-to-move-cac4-">
+        <li class="text">CLICK TO MOVE CAC4 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-click-to-move-cac5">
+        <li class="text">CLICK TO MOVE CAC5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-click-to-move-cac6">
+        <li class="text">CLICK TO MOVE CAC6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-click-to-move-cac-7">
+        <li class="text">CLICK TO MOVE CAC 7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-click-to-move-cac-8">
+        <li class="text">CLICK TO MOVE CAC 8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-click-to-move-cac9">
+        <li class="text">CLICK TO MOVE CAC9</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-click-to-move-10">
+        <li class="text">CLICK TO MOVE 10</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-click-to-move--11">
+        <li class="text">CLICK TO MOVE  11</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-cac-auditorium-900">
+        <li class="text">CAC AUDITORIUM 900</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-cac-stairs2">
+        <li class="text">CAC STAIRS2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-cac-stairs1">
+        <li class="text">CAC STAIRS1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-cac-lecture-room">
+        <li class="text">CAC LECTURE ROOM</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-cac-lecture-room2">
+        <li class="text">CAC LECTURE ROOM2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-cac-out-1">
+        <li class="text">CAC OUT 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-cac-out-2">
+        <li class="text">CAC OUT 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58-cac-out3">
+        <li class="text">CAC OUT3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="59-cac-out4">
+        <li class="text">CAC OUT4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="60-cac-out-5">
+        <li class="text">CAC OUT 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="61-cac-out-8">
+        <li class="text">CAC OUT 8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="62-cac-out-7">
+        <li class="text">CAC OUT 7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="63-cac-out-9">
+        <li class="text">CAC OUT 9</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="64-cac-out--10">
+        <li class="text">CAC OUT  10</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="65-cac-out-12">
+        <li class="text">CAC OUT 12</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="66-cac-out-13">
+        <li class="text">CAC OUT 13</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="67-cac-outb-14">
+        <li class="text">CAC OUTB 14</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="68-cac-out-15">
+        <li class="text">CAC OUT 15</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="69-cac-out-16">
+        <li class="text">CAC OUT 16</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="70-cac-out-17">
+        <li class="text">CAC OUT 17</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="71-click-to-mv1">
+        <li class="text">CLICK TO MV1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="72-click-to-mv2">
+        <li class="text">CLICK TO MV2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="73-click-to-mv3">
+        <li class="text">CLICK TO MV3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="74-click-to-mv4">
+        <li class="text">CLICK TO MV4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="75-click-to-mv5">
+        <li class="text">CLICK TO MV5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="76-mv7">
+        <li class="text">MV7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="77-mv9">
+        <li class="text">MV9</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="78-1000680478-1">
+        <li class="text">1000680478 (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="79-mv10">
+        <li class="text">MV10</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="80-dp2">
+        <li class="text">DP2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="81-dp">
+        <li class="text">DP</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="82-valco-printing-shop">
+        <li class="text">VALCO PRINTING SHOP</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="83-vh-1">
+        <li class="text">VH 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="84-vh-2">
+        <li class="text">VH 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="85-vh3">
+        <li class="text">VH3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="86-vh4">
+        <li class="text">vh4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="87-src2">
+        <li class="text">SRC2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="88-src1">
+        <li class="text">SRC1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="89-knh">
+        <li class="text">KNH</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="90-ent1">
+        <li class="text">ENT1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="91-ent3">
+        <li class="text">ENT3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="92-ent4">
+        <li class="text">ENT4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="93-ent5">
+        <li class="text">ENT5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="94-ent6">
+        <li class="text">ENT6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="95-ent7">
+        <li class="text">ENT7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="96-ent9">
+        <li class="text">ENT9</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="97-ent8">
+        <li class="text">ENT8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="98-ent10">
+        <li class="text">ENT10</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="99-ent11">
+        <li class="text">ENT11</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="100-ent13">
+        <li class="text">ENT13</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="101-ent12">
+        <li class="text">ENT12</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="102-sa-in">
+        <li class="text">SA IN</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="103-1000677105">
+        <li class="text">1000677105</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="104-sa-1">
+        <li class="text">SA 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="105-sa-2">
+        <li class="text">SA 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="106-sa-3">
+        <li class="text">SA 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="107-sa-4">
+        <li class="text">SA 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="108-sa-5">
+        <li class="text">SA 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="109-sa-6">
+        <li class="text">SA 6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="110-dp4">
+        <li class="text">DP4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="111-dp3">
+        <li class="text">DP3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="112-dp2">
+        <li class="text">DP2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="113-dpp1">
+        <li class="text">DPP1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="114-dp1">
+        <li class="text">DP1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="115-lt1">
+        <li class="text">LT1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="116-lt2">
+        <li class="text">LT2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="117-lt3">
+        <li class="text">LT3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="118-lt4">
+        <li class="text">LT4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="119-lt5">
+        <li class="text">LT5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="120-lec-t">
+        <li class="text">LEC T</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="121-lt6">
+        <li class="text">LT6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="122-lt7">
+        <li class="text">LT7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="123-lt8">
+        <li class="text">LT8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="124-adm2">
+        <li class="text">ADM2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="125-ad1">
+        <li class="text">AD1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="126-ad3">
+        <li class="text">AD3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="127-ad4">
+        <li class="text">AD4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="128-sam5">
+        <li class="text">SAM5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="129-1000681224-1">
+        <li class="text">1000681224 (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="130-ad5">
+        <li class="text">AD5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="131-ad6">
+        <li class="text">AD6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="132-ad7">
+        <li class="text">AD7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="133-ad9">
+        <li class="text">AD9</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="134-ad8">
+        <li class="text">AD8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="135-sam3">
+        <li class="text">SAM3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="136-sam2">
+        <li class="text">SAM2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="137-sam1">
+        <li class="text">SAM1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="138-sam0">
+        <li class="text">SAM0</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
